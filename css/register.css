@@ -1,0 +1,28 @@
+body {
+    text-align: center;
+    line-height: 200%;
+}
+
+button {
+    cursor: pointer;
+}
+
+form {
+    width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-family: sans-serif;
+    font-size: small;
+    line-height: 200%;
+    background-color: #c19c7b75;
+    text-align: left;
+}
+input {
+    width: 100%;
+}
+
+label {
+    display: block;
+}

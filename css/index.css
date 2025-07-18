@@ -1,0 +1,160 @@
+body {
+    margin: 0px 200px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+header {
+    position: relative;
+    display: flex;
+    background-color: rgb(221, 104, 58);
+    min-height: 110px;
+    align-items: center;
+    padding: 20px 20px;
+}
+
+.header-logo {
+    position: relative;
+    width: 180px;
+}
+
+button {
+    cursor: pointer;
+}
+
+.btn-user {
+    position: absolute;
+    right: 220px;
+    height: 45px;
+    border-radius: 50%;
+    background-color: rgb(95, 68, 55);
+    border: none;
+}
+
+.btn-cart {
+    display: flex;
+    position: absolute;
+    right: 30px;
+    height: 45px;
+    width: 160px;
+    border-radius: 20px;
+    border: none;
+    padding: 5px;
+    align-items: center;
+    gap: 20px;
+    background-color: black;
+    color: white;
+    font-size: 15px;
+}
+
+.btn-cart img {
+    margin: 10px;
+}
+
+.search-bar {
+
+    position: relative;
+    width: 500px;
+
+    align-self: center;
+    align-content: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+
+}
+
+.search-bar input {
+    width: 100%;
+    height: 45px;
+    padding: 10px 10px 10px 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    border: none;
+}
+
+.search-bar i {
+    position: absolute;
+    top: 50%;
+    right: 30px;
+    transform: translateY(-50%);
+    color: #888;
+    font-size: 16px;
+}
+
+.vmenu {}
+
+.vmenu>ul {
+    list-style: none;
+    justify-self: center;
+    width: 70%;
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+}
+
+.vmenu>ul>li {
+    flex: 1;
+    display: inline-block;
+    position: relative;
+    text-align: center;
+    padding: 10px;
+}
+
+.vmenu>ul>li:hover {
+    background-color: rgb(221, 104, 58);
+}
+
+.vmenu>ul>li>a {
+    display: block;
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.vmenu>ul>li>a:hover {
+    transform: scaleX(1.1);
+    transform-origin: top;
+    transition: transform 0.2s ease-in-out;
+}
+
+.vmenu>ul>li>ul {
+    position: absolute;
+    padding: 0px;
+    background-color: white;
+    box-shadow: 0 0 10px gray;
+    display: none;
+    list-style: none;
+    line-height: 40px;
+}
+
+.vmenu>ul>li:hover>ul {
+    display: block;
+    width: 210px;
+}
+
+.slides {
+    background-color: rgb(221, 104, 58);
+    display: flex;
+    height: 450px;
+    overflow: hidden;
+    transition: transform 0.5s ease-in-out;
+    width: 100%;
+}
+
+.slides img {
+    width: 100%;
+    height: 450px;
+    object-fit: contain;
+}
+
+article {
+    height: 1000px;
+}
+
+footer {
+    height: 200px; /*Tạm thời*/
+    background-color: rgb(239, 123, 77);
+}
