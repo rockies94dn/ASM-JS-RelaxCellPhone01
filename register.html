@@ -21,14 +21,37 @@
             <label for="password-confirm">Xác nhận mật khẩu:</label>
             <input type="password-confirm" name="password-confirm" id="password-confirm">
 
-            <label for="username">Họ và tên:</label>
-            <input type="text" name="username" id="username">
+            <label for="fullname">Họ và tên:</label>
+            <input type="text" name="fullname" id="fullname">
 
-            <label for="username">Email:</label>
-            <input type="text" name="username" id="username">
+            <label for="">Giới tính:</label>
+            <label for="gender">
+                <input type="radio" name="gender" value="male">
+                Nam
+            </label>
+            <label for="gender">
+                <input type="radio" name="gender" value="female">
+                Nữ
+            </label>
 
-            <label for="username">Số điện thoại:</label>
-            <input type="text" name="username" id="username">
+            <select id="city" name="city">
+                <option value="danang">Đà Nẵng</option>
+                <option value="danang">Hà Nội</option>
+                <option value="danang">TP Hồ Chí Minh</option>
+                <option value="danang">Huế</option>
+                <option value="danang">Hải Phòng</option>
+                <option value="danang">Cần Thơ</option>
+            </select>
+
+            <label for="email">Email:</label>
+            <input type="text" name="email" id="email">
+
+            <label for="phone">Số điện thoại:</label>
+            <input type="text" name="phone" id="phone">
+
+            <label for="address">Địa chỉ:</label>
+
+
         </form>
         <button class="btn-confirm" onclick="confirmRegister()">Xác Nhận</button>
         <button class="btn-goback" onclick="goBackToLoginPage()">Quay Lại</button>

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +8,7 @@
     <title>Quản lý tài khoản</title>
 
 </head>
+
 <body>
     <div class="main-content">
         <form action="">
@@ -16,6 +18,12 @@
             <label for="password">Mật khẩu:</label>
             <input type="password" name="password" id="password">
         </form>
+
+        <div class="remember-box">
+            <input type="checkbox" id="remember">
+            <label for="remember" class="label-inline">Lưu tài khoản</label>
+        </div>
+
         <button class="btn-login" onclick="onLoginHandler()">Đăng Nhập</button> <br>
         <p>Chưa có tài khoản?</p>
         <button class="btn-register" onclick="openRegisterPage()">Đăng Ký</button>
@@ -23,4 +31,5 @@
 
     <script src="js/login.js"></script>
 </body>
+
 </html>

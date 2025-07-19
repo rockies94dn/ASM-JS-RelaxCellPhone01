@@ -16,6 +16,13 @@ function openLoginPage() {
 
 //Mở giỏ hàng
 function openCart() {
-    alert("Giỏ hàng đang xây dựng"); 
+    alert("Giỏ hàng đang xây dựng");
     //Đang xây dựng
 }
+
+document.getElementById("search-box").addEventListener("keydown", function (event) {
+    if (event.key === "Enter") {
+        event.preventDefault();
+        alert("Chức năng tìm kiếm đang phát triển");
+    }
+});

@@ -29,10 +29,39 @@ label {
     display: block;
 }
 
+.remember-box {
+    display: inline-flex;
+    align-items: center;
+    text-align: center;
+}
+
+.remember-box label {
+    display: inline-block;
+    white-space: nowrap;
+    margin-bottom: 0;
+    padding: 0;
+}
+
+.remember-box input {
+    display: inline-block;
+    white-space: nowrap;
+    margin-bottom: 0;
+    padding: 0;
+}
+
 .btn-login {
     width: 400px;
     height: 50px;
     border-radius: 20px;
     border: none;
-    background-color: rgba(235, 118, 76, 0.759);
+    background-color: rgba(236, 72, 12, 0.925);
+    color: white;
+    display: block;
+    justify-self: center;
+}
+
+.btn-register {
+    width: 150px;
+    height: 30px;
+    border-radius: 10px;
 }
