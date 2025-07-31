@@ -172,6 +172,7 @@
      padding: 20px;
      margin: 20px 20px 20px 0px;
      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+     line-height: 150%;
  }
 
  .filter-box h3 {
@@ -245,7 +246,7 @@
      flex-wrap: wrap;
      gap: 20px;
      margin: 20px auto;
-     justify-content: center;
+     /* justify-content: center; */
  }
 
  .product {

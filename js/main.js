@@ -20,9 +20,11 @@ function openCart() {
     //Đang xây dựng
 }
 
+//
 document.getElementById("search-box").addEventListener("keydown", function (event) {
     if (event.key === "Enter") {
         event.preventDefault();
         alert("Chức năng tìm kiếm đang phát triển");
     }
 });
+

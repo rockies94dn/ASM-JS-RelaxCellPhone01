@@ -54,8 +54,8 @@
             <ul>
                 <li>
                     <strong>Hãng Sản Xuất</strong>
-                    <label><input type="checkbox"> Apple</label>
-                    <label><input type="checkbox"> Samsung</label>
+                    <label><input type="checkbox" name="brand" value="apple"> Apple</label>
+                    <label><input type="checkbox" name="brand" value="samsung"> Samsung</label>
                     <label><input type="checkbox"> Nokia</label>
                     <label><input type="checkbox"> Xiaomi</label>
                     <label><input type="checkbox"> Oppo</label>
@@ -74,26 +74,26 @@
                     <label><input type="checkbox"> 128GB</label>
                     <label><input type="checkbox"> 256GB</label>
                     <label><input type="checkbox"> 512GB</label>
-                    <label><input type="checkbox"> 512GB trở lên</label>
+
                 </li>
 
                 <li>
                     <strong>Dung Lượng RAM</strong>
-                    <label><input type="checkbox"> Dưới 8GB</label>
+
                     <label><input type="checkbox"> 8GB</label>
                     <label><input type="checkbox"> 16GB</label>
                     <label><input type="checkbox"> 32GB</label>
-                    <label><input type="checkbox"> 32GB trở lên</label>
+
                 </li>
             </ul>
         </div>
 
         </aside>
         <article>
-            <h2>SẢN PHẨM NỔI BẬT</h2>
+            <h2>DANH MỤC SẢN PHẨM</h2>
             <div class="products-container">
 
-                <div class="product">
+                <div class="product" data-brand="apple" data-os="ios" data-storage="256gb" data-ram="8gb">
                     <img src="image/products/Iphone/Iphone_12ProMax.png" alt="">
                     <button class="add-to-cart">
                         <img src="image/add-to-cart-32px.png" alt="">
@@ -102,7 +102,7 @@
                     <p class="product-name">IPHONE 12 PRO MAX</p>
                 </div>
 
-                <div class="product">
+                <div class="product" data-brand="apple" data-os="ios" data-storage="512gb" data-ram="32gb">
                     <img src="image/products/Iphone/Iphone_13ProMax.png" alt="">
                     <button class="add-to-cart">
                         <img src="image/add-to-cart-32px.png" alt="">
@@ -228,7 +228,7 @@
                     <p class="product-name">OPPO RENO 12 5G</p>
                 </div>
 
-                <div class="product">
+                <div class="product" data-brand="samsung" data-os="android" data-storage="128gb" data-ram="16gb">
                     <img src="image/products/Samsung/Samsung_Galaxy_A36_5G.png" alt="">
                     <button class="add-to-cart">
                         <img src="image/add-to-cart-32px.png" alt="">
@@ -236,7 +236,7 @@
                     <p class="price">16,790,000 VND</p>
                     <p class="product-name">SAMSUNG GALAXY A36 5G</p>
                 </div>
-                
+
                 <div class="product">
                     <img src="image/products/Samsung/Samsung_Galaxy_M55_5G.png" alt="">
                     <button class="add-to-cart">
@@ -253,7 +253,55 @@
                     <p class="price">16,790,000 VND</p>
                     <p class="product-name">SAMSUNG GALAXY S25 ULTRA</p>
                 </div>
-
+                <div class="product">
+                    <img src="image/products/Samsung/Samsung_Galaxy_ZFlip6.png" alt="">
+                    <button class="add-to-cart">
+                        <img src="image/add-to-cart-32px.png" alt="">
+                    </button>
+                    <p class="price">18,000,000 VND</p>
+                    <p class="product-name">SAMSUNG GALAXY ZFLIP 6</p>
+                </div>
+                <div class="product">
+                    <img src="image/products/Samsung/Samsung_Galaxy_ZFold6.png" alt="">
+                    <button class="add-to-cart">
+                        <img src="image/add-to-cart-32px.png" alt="">
+                    </button>
+                    <p class="price">20,000,000 VND</p>
+                    <p class="product-name">SAMSUNG GALAXY ZFOLD 6</p>
+                </div>
+                <div class="product">
+                    <img src="image/products/Xiaomi/Xiaomi_14T_Pro.png" alt="">
+                    <button class="add-to-cart">
+                        <img src="image/add-to-cart-32px.png" alt="">
+                    </button>
+                    <p class="price">22,000,000 VND</p>
+                    <p class="product-name">XIAO MI 14T PRO</p>
+                </div>
+                <div class="product">
+                    <img src="image/products/Xiaomi/Xiaomi_15_5G.png" alt="">
+                    <button class="add-to-cart">
+                        <img src="image/add-to-cart-32px.png" alt="">
+                    </button>
+                    <p class="price">12,000,000 VND</p>
+                    <p class="product-name">XIAO MI 15 5G</p>
+                </div>
+                <div class="product">
+                    <img src="image/products/Xiaomi/Xiaomi_15Ultra_5G.png" alt="">
+                    <button class="add-to-cart">
+                        <img src="image/add-to-cart-32px.png" alt="">
+                    </button>
+                    <p class="price">9,000,000 VND</p>
+                    <p class="product-name">XIAO MI 15 ULTRA 5G</p>
+                </div>
+                <div class="product">
+                    <img src="image/products/Xiaomi/Xiaomi_Redmi_Note_13Pro.png" alt="">
+                    <button class="add-to-cart">
+                        <img src="image/add-to-cart-32px.png" alt="">
+                    </button>
+                    <p class="price">15,900,000 VND</p>
+                    <p class="product-name">XIAO MI REDMI NOTE 13 PRO</p>
+                </div>
+               
             </div>
         </article>
     </div>
