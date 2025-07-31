@@ -240,6 +240,20 @@
      color: rgb(231, 36, 2);
  }
 
+ select {
+     padding: 5px;
+     width: 200px;
+     font-weight: bold;
+     border: 1px solid orangered;
+     border-radius: 2px;
+     outline: none;
+ }
+
+ select:focus {
+     border-color: orangered;
+     box-shadow: 0 0 5px rgba(255, 69, 0, 0.5);
+ }
+
  .products-container {
      /* position: relative; */
      display: flex;
