@@ -1,0 +1,37 @@
+body {
+    text-align: center;
+    justify-items: center;
+    line-height: 200%;
+    background-color: rgba(239, 223, 191, 0.359);
+    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+}
+
+#products-table {
+    width: 500px;
+    padding: 20px;
+    border: 1px solid orangered;
+    border-collapse: collapse;
+}
+
+#products-table img {
+    width: 50px;
+}
+
+th {
+    padding: 10px;
+    border: 1px solid orangered;
+}
+
+td {
+    padding: 10px;
+    border: 1px solid orangered;
+}
+
+p {
+    font-size: larger;
+}
+
+span {
+    font-weight: bolder;
+    color: green
+}

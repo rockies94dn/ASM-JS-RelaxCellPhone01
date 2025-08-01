@@ -4,10 +4,26 @@
      box-sizing: border-box;
  } */
 
+ #added-popup {
+     position: fixed;
+     bottom: 30px;
+     right: 30px;
+     background-color: #c86835;
+     color: white;
+     padding: 12px 20px;
+     border-radius: 8px;
+     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+     opacity: 0;
+     transition: opacity 0.3s ease;
+     z-index: 9999;
+ }
+
  body {
      margin: auto 100px;
      font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
  }
+
+
 
  header {
      display: flex;
@@ -46,22 +62,31 @@
  }
 
  .btn-cart {
+     position: fixed;
+     bottom: 90px;
+     right: 5px;
+     z-index: 10000;
      display: flex;
      align-items: center;
      gap: 10px;
-     height: 45px;
-     width: 200px;
-     padding: 0 15px;
+     height: 60px;
+     padding: 0 15px 0 15px;
      border-radius: 20px;
      border: none;
-     background-color: black;
+     background-color: rgb(241, 94, 36);
      color: white;
      font-size: 15px;
+     transition: transform 0.3s ease;
+ }
+
+ .btn-cart:hover {
+     transform: scale(1.05);
+     box-shadow: 0 0 10px rgba(85, 58, 48, 0.623);
  }
 
  .btn-cart img {
-     height: 25px;
-     width: 25px;
+     height: 40px;
+     width: 40px;
  }
 
  .search-bar {

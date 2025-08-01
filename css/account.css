@@ -4,6 +4,7 @@ body {
     line-height: 200%;
     background-color: rgba(239, 223, 191, 0.359);
     color: orangered;
+    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
 }
 
 .information {
