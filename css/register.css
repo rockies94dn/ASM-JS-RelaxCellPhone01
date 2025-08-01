@@ -1,51 +1,49 @@
+body {
+    text-align: center;
+    line-height: 200%;
+    background-color: rgba(239, 223, 191, 0.359);
+}
 
+button {
+    cursor: pointer;
+    width: 170px;
+    height: 25px;
+    border-radius: 5px;
+    border: none;
+    background-color: rgba(236, 72, 12, 0.925);
+    color: white;
+}
 
- body {
-     text-align: center;
-     line-height: 200%;
-     background-color: rgba(239, 223, 191, 0.359);
- }
+.information-input {
+    width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid orangered;
+    border-radius: 10px;
+    font-family: sans-serif;
+    font-size: small;
+    line-height: 200%;
+    background-color: #c19c7b75;
+    text-align: left;
+}
 
- button {
-     cursor: pointer;
-     width: 170px;
-     height: 25px;
-     border-radius: 5px;
-     border: none;
-     background-color: rgba(236, 72, 12, 0.925);
-     color: white;
- }
+input {
+    width: 100%;
+}
 
- form {
-     width: 400px;
-     margin: 50px auto;
-     padding: 20px;
-     border: 1px solid orangered;
-     border-radius: 10px;
-     font-family: sans-serif;
-     font-size: small;
-     line-height: 200%;
-     background-color: #c19c7b75;
-     text-align: left;
- }
+input[type="radio"] {
+    width: auto;
+}
 
- input {
-     width: 100%;
- }
+select {
+    width: 100%;
+}
 
- input[type="radio"] {
-     width: auto;
- }
+label {
+    display: block;
+}
 
- select {
-     width: 100%;
- }
-
- label {
-     display: block;
- }
-
- label[for="gender"] {
-     display: inline-block;
-     white-space: nowrap;
- }
+label[for="gender"] {
+    display: inline-block;
+    white-space: nowrap;
+}

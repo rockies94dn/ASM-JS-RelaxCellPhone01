@@ -11,7 +11,7 @@
 <body>
 
     <div class="main-content">
-        <form action="">
+        <div class="information-input">
             <label for="username">Tên đăng nhập:</label>
             <input type="text" name="username" id="username">
 
@@ -19,7 +19,7 @@
             <input type="password" name="password" id="password">
 
             <label for="password-confirm">Xác nhận mật khẩu:</label>
-            <input type="password-confirm" name="password-confirm" id="password-confirm">
+            <input type="password" name="password-confirm" id="password-confirm">
 
             <label for="fullname">Họ và tên:</label>
             <input type="text" name="fullname" id="fullname">
@@ -33,14 +33,17 @@
                 <input type="radio" name="gender" value="female">
                 Nữ
             </label>
+            <label for="dob">Ngày sinh:</label>
+            <input type="date" name="dob" id="dob">
 
+            <label for="address">Địa chỉ:</label>
             <select id="city" name="city">
                 <option value="danang">Đà Nẵng</option>
-                <option value="danang">Hà Nội</option>
-                <option value="danang">TP Hồ Chí Minh</option>
-                <option value="danang">Huế</option>
-                <option value="danang">Hải Phòng</option>
-                <option value="danang">Cần Thơ</option>
+                <option value="hanoi">Hà Nội</option>
+                <option value="hcm">TP Hồ Chí Minh</option>
+                <option value="hue">Huế</option>
+                <option value="haiphong">Hải Phòng</option>
+                <option value="cantho">Cần Thơ</option>
             </select>
 
             <label for="email">Email:</label>
@@ -49,10 +52,8 @@
             <label for="phone">Số điện thoại:</label>
             <input type="text" name="phone" id="phone">
 
-            <label for="address">Địa chỉ:</label>
+        </div>
 
-
-        </form>
         <button class="btn-confirm" onclick="confirmRegister()">Xác Nhận</button>
         <button class="btn-goback" onclick="goBackToLoginPage()">Quay Lại</button>
     </div>
