@@ -19,6 +19,10 @@ function handleLoginSuccess(username) {
     sessionStorage.setItem("currentLoginUsername", username);
 }
 
+function handleLogout() {
+    sessionStorage.removeItem("currentLoginUsername");
+}
+
 //Mở trang đăng nhập và đăng ký
 function openLoginPage() {
     const width = 550;

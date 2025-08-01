@@ -1,5 +1,29 @@
 body {
     text-align: center;
+    justify-items: center;
     line-height: 200%;
     background-color: rgba(239, 223, 191, 0.359);
+    color: orangered;
+}
+
+.information {
+    text-align: left;
+    width: 300px;
+    border: 1px solid orangered;
+    border-radius: 8px;
+    color: black;
+    padding: 20px;
+    font-size: medium;
+}
+
+span {
+    font-weight: bold;
+}
+
+button {
+    width: 150px;
+    height: 30px;
+    border-radius: 10px;
+    margin: 30px;
+    cursor: pointer;
 }

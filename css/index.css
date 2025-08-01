@@ -41,6 +41,10 @@
      margin-left: auto;
  }
 
+ .btn-user:hover {
+     scale: 1.2;
+ }
+
  .btn-cart {
      display: flex;
      align-items: center;
