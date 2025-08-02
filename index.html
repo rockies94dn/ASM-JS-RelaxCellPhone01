@@ -17,6 +17,7 @@
         <div class="search-bar">
             <i class="fas fa-search"></i>
             <input type="search" id="search-box" placeholder="Nhập tên sản phẩm, nhãn hiệu cần tìm...">
+            <div class="search-dropdown" id="search-dropdown"></div>
         </div>
 
         <button class="btn-user" onclick="onUserButton()">
@@ -38,10 +39,20 @@
             <li><a href="#">LIÊN HỆ</a></li>
         </ul>
     </nav>
-    <div class="slider">
+    <div class="slider" role="banner" aria-label="Banner quảng cáo">
         <div class="slides">
-            <img src="image/banner.jpg" alt="Banner 01">
-            <!-- <img src="image/banner.jpg" alt="Banner 02"> -->
+            <img src="image/banner.jpg" alt="Banner Relax Cellphone 1" loading="lazy" class="slide active">
+            <img src="image/banner-2.png" alt="Banner Relax Cellphone 2" loading="lazy" class="slide">
+        </div>
+        <button class="slider-btn prev-btn" onclick="changeSlide(-1)" aria-label="Banner trước">
+            <i class="fas fa-chevron-left"></i>
+        </button>
+        <button class="slider-btn next-btn" onclick="changeSlide(1)" aria-label="Banner tiếp theo">
+            <i class="fas fa-chevron-right"></i>
+        </button>
+        <div class="slider-dots">
+            <span class="dot active" onclick="currentSlide(1)" aria-label="Banner 1"></span>
+            <span class="dot" onclick="currentSlide(2)" aria-label="Banner 2"></span>
         </div>
     </div>
 
@@ -103,7 +114,8 @@
 
             <div class="products-container">
 
-                <div class="product" data-brand="apple" data-os="ios" data-storage="256gb" data-ram="8gb" data-price="14990000">
+                <div class="product" data-brand="apple" data-os="ios" data-storage="256gb" data-ram="8gb"
+                    data-price="14990000" onclick="openDetails()">
                     <img src="image/products/Iphone/Iphone_12ProMax.png" alt="">
                     <button class="add-to-cart">
                         <img src="image/add-to-cart-32px.png" alt="">
@@ -112,7 +124,8 @@
                     <p class="product-name">IPHONE 12 PRO MAX</p>
                 </div>
 
-                <div class="product" data-brand="apple" data-os="ios" data-storage="512gb" data-ram="8gb" data-price="15990000">
+                <div class="product" data-brand="apple" data-os="ios" data-storage="512gb" data-ram="8gb"
+                    data-price="15990000">
                     <img src="image/products/Iphone/Iphone_13ProMax.png" alt="">
                     <button class="add-to-cart">
                         <img src="image/add-to-cart-32px.png" alt="">
@@ -121,7 +134,8 @@
                     <p class="product-name">IPHONE 13 PRO MAX</p>
                 </div>
 
-                <div class="product" data-brand="apple" data-os="ios" data-storage="256gb" data-ram="8gb" data-price="16990000">
+                <div class="product" data-brand="apple" data-os="ios" data-storage="256gb" data-ram="8gb"
+                    data-price="16990000">
                     <img src="image/products/Iphone/Iphone_14ProMax.png" alt="">
                     <button class="add-to-cart">
                         <img src="image/add-to-cart-32px.png" alt="">
@@ -130,7 +144,8 @@
                     <p class="product-name">IPHONE 14 PRO MAX</p>
                 </div>
 
-                <div class="product" data-brand="apple" data-os="ios" data-storage="512gb" data-ram="8gb" data-price="20990000">
+                <div class="product" data-brand="apple" data-os="ios" data-storage="512gb" data-ram="8gb"
+                    data-price="20990000">
                     <img src="image/products/Iphone/Iphone_15ProMax.jpg" alt="">
                     <button class="add-to-cart">
                         <img src="image/add-to-cart-32px.png" alt="">
@@ -139,7 +154,8 @@
                     <p class="product-name">IPHONE 15 PRO MAX</p>
                 </div>
 
-                <div class="product" data-brand="apple" data-os="ios" data-storage="512gb" data-ram="8gb" data-price="25990000">
+                <div class="product" data-brand="apple" data-os="ios" data-storage="512gb" data-ram="8gb"
+                    data-price="25990000">
                     <img src="image/products/Iphone/Iphone_16ProMax.jpg" alt="">
                     <button class="add-to-cart">
                         <img src="image/add-to-cart-32px.png" alt="">
@@ -147,7 +163,8 @@
                     <p class="price">25,990,000 VND</p>
                     <p class="product-name">IPHONE 16 PRO MAX</p>
                 </div>
-                <div class="product" data-brand="nokia" data-os="android" data-storage="64gb" data-ram="4gb" data-price="10990000">
+                <div class="product" data-brand="nokia" data-os="android" data-storage="64gb" data-ram="4gb"
+                    data-price="10990000">
                     <img src="image/products/Nokia/Nokia_105_4G_Pro.png" alt="">
                     <button class="add-to-cart">
                         <img src="image/add-to-cart-32px.png" alt="">
@@ -156,7 +173,8 @@
                     <p class="product-name">NOKIA 105 4G PRO</p>
                 </div>
 
-                <div class="product" data-brand="nokia" data-os="android" data-storage="64gb" data-ram="4gb" data-price="12590000">
+                <div class="product" data-brand="nokia" data-os="android" data-storage="64gb" data-ram="4gb"
+                    data-price="12590000">
                     <img src="image/products/Nokia/Nokia_110_4G_Pro.png" alt="">
                     <button class="add-to-cart">
                         <img src="image/add-to-cart-32px.png" alt="">
@@ -165,7 +183,8 @@
                     <p class="product-name">NOKIA 110 4G PRO</p>
                 </div>
 
-                <div class="product" data-brand="nokia" data-os="android" data-storage="64gb" data-ram="4gb" data-price="9790000">
+                <div class="product" data-brand="nokia" data-os="android" data-storage="64gb" data-ram="4gb"
+                    data-price="9790000">
                     <img src="image/products/Nokia/Nokia_220_4G.png" alt="">
                     <button class="add-to-cart">
                         <img src="image/add-to-cart-32px.png" alt="">
@@ -174,7 +193,8 @@
                     <p class="product-name">NOKIA 220 4G</p>
                 </div>
 
-                <div class="product" data-brand="nokia" data-os="android" data-storage="64gb" data-ram="4gb" data-price="8790000">
+                <div class="product" data-brand="nokia" data-os="android" data-storage="64gb" data-ram="4gb"
+                    data-price="8790000">
                     <img src="image/products/Nokia/Nokia_3210_4G.png" alt="">
                     <button class="add-to-cart">
                         <img src="image/add-to-cart-32px.png" alt="">
@@ -183,7 +203,8 @@
                     <p class="product-name">NOKIA 3210 4G</p>
                 </div>
 
-                <div class="product" data-brand="nokia" data-os="android" data-storage="128gb" data-ram="8gb" data-price="10990000">
+                <div class="product" data-brand="nokia" data-os="android" data-storage="128gb" data-ram="8gb"
+                    data-price="10990000">
                     <img src="image/products/Nokia/Screenshot 2025-07-17 235515.png" alt="">
                     <button class="add-to-cart">
                         <img src="image/add-to-cart-32px.png" alt="">
@@ -192,7 +213,8 @@
                     <p class="product-name">NOKIA 3210 5G</p>
                 </div>
 
-                <div class="product" data-brand="oppo" data-os="android" data-storage="256gb" data-ram="12gb" data-price="16790000">
+                <div class="product" data-brand="oppo" data-os="android" data-storage="256gb" data-ram="12gb"
+                    data-price="16790000">
                     <img src="image/products/Oppo/OPPO_Find_N3_Flip.png" alt="">
                     <button class="add-to-cart">
                         <img src="image/add-to-cart-32px.png" alt="">
@@ -201,7 +223,8 @@
                     <p class="product-name">OPPO FIND N3</p>
                 </div>
 
-                <div class="product" data-brand="oppo" data-os="android" data-storage="256gb" data-ram="12gb" data-price="16790000">
+                <div class="product" data-brand="oppo" data-os="android" data-storage="256gb" data-ram="12gb"
+                    data-price="16790000">
                     <img src="image/products/Oppo/OPPO_Find_N3_Flip.png" alt="">
                     <button class="add-to-cart">
                         <img src="image/add-to-cart-32px.png" alt="">
@@ -210,7 +233,8 @@
                     <p class="product-name">OPPO FIND N3 FLIP</p>
                 </div>
 
-                <div class="product" data-brand="oppo" data-os="android" data-storage="128gb" data-ram="8gb" data-price="10990000">
+                <div class="product" data-brand="oppo" data-os="android" data-storage="128gb" data-ram="8gb"
+                    data-price="10990000">
                     <img src="image/products/Oppo/OPPO_FIND_N5.png" alt="">
                     <button class="add-to-cart">
                         <img src="image/add-to-cart-32px.png" alt="">
@@ -219,7 +243,8 @@
                     <p class="product-name">OPPO FIND N5</p>
                 </div>
 
-                <div class="product" data-brand="oppo" data-os="android" data-storage="256gb" data-ram="12gb" data-price="16790000">
+                <div class="product" data-brand="oppo" data-os="android" data-storage="256gb" data-ram="12gb"
+                    data-price="16790000">
                     <img src="image/products/Oppo/OPPO_Reno10_Pro+_5G.png" alt="">
                     <button class="add-to-cart">
                         <img src="image/add-to-cart-32px.png" alt="">
@@ -228,7 +253,8 @@
                     <p class="product-name">OPPO RENO 10 PRO 5G</p>
                 </div>
 
-                <div class="product" data-brand="oppo" data-os="android" data-storage="128gb" data-ram="8gb" data-price="12590000">
+                <div class="product" data-brand="oppo" data-os="android" data-storage="128gb" data-ram="8gb"
+                    data-price="12590000">
                     <img src="image/products/Oppo/OPPO_Reno12_5G.png" alt="">
                     <button class="add-to-cart">
                         <img src="image/add-to-cart-32px.png" alt="">
@@ -237,7 +263,8 @@
                     <p class="product-name">OPPO RENO 12 5G</p>
                 </div>
 
-                <div class="product" data-brand="samsung" data-os="android" data-storage="128gb" data-ram="8gb" data-price="16790000">
+                <div class="product" data-brand="samsung" data-os="android" data-storage="128gb" data-ram="8gb"
+                    data-price="16790000">
                     <img src="image/products/Samsung/Samsung_Galaxy_A36_5G.png" alt="">
                     <button class="add-to-cart">
                         <img src="image/add-to-cart-32px.png" alt="">
@@ -246,7 +273,8 @@
                     <p class="product-name">SAMSUNG GALAXY A36 5G</p>
                 </div>
 
-                <div class="product" data-brand="samsung" data-os="android" data-storage="128gb" data-ram="8gb" data-price="12590000">
+                <div class="product" data-brand="samsung" data-os="android" data-storage="128gb" data-ram="8gb"
+                    data-price="12590000">
                     <img src="image/products/Samsung/Samsung_Galaxy_M55_5G.png" alt="">
                     <button class="add-to-cart">
                         <img src="image/add-to-cart-32px.png" alt="">
@@ -255,7 +283,8 @@
                     <p class="product-name">SAMSUNG GALAXY M55 5G</p>
                 </div>
 
-                <div class="product" data-brand="samsung" data-os="android" data-storage="512gb" data-ram="16gb" data-price="16790000">
+                <div class="product" data-brand="samsung" data-os="android" data-storage="512gb" data-ram="16gb"
+                    data-price="16790000">
                     <img src="image/products/Samsung/Samsung_Galaxy_S25_ultra.png" alt="">
                     <button class="add-to-cart">
                         <img src="image/add-to-cart-32px.png" alt="">
@@ -264,7 +293,8 @@
                     <p class="product-name">SAMSUNG GALAXY S25 ULTRA</p>
                 </div>
 
-                <div class="product" data-brand="samsung" data-os="android" data-storage="256gb" data-ram="12gb" data-price="18000000">
+                <div class="product" data-brand="samsung" data-os="android" data-storage="256gb" data-ram="12gb"
+                    data-price="18000000">
                     <img src="image/products/Samsung/Samsung_Galaxy_ZFlip6.png" alt="">
                     <button class="add-to-cart">
                         <img src="image/add-to-cart-32px.png" alt="">
@@ -273,7 +303,8 @@
                     <p class="product-name">SAMSUNG GALAXY ZFLIP 6</p>
                 </div>
 
-                <div class="product" data-brand="samsung" data-os="android" data-storage="512gb" data-ram="16gb" data-price="20000000">
+                <div class="product" data-brand="samsung" data-os="android" data-storage="512gb" data-ram="16gb"
+                    data-price="20000000">
                     <img src="image/products/Samsung/Samsung_Galaxy_ZFold6.png" alt="">
                     <button class="add-to-cart">
                         <img src="image/add-to-cart-32px.png" alt="">
@@ -282,7 +313,8 @@
                     <p class="product-name">SAMSUNG GALAXY ZFOLD 6</p>
                 </div>
 
-                <div class="product" data-brand="xiaomi" data-os="android" data-storage="256gb" data-ram="12gb" data-price="22000000">
+                <div class="product" data-brand="xiaomi" data-os="android" data-storage="256gb" data-ram="12gb"
+                    data-price="22000000">
                     <img src="image/products/Xiaomi/Xiaomi_14T_Pro.png" alt="">
                     <button class="add-to-cart">
                         <img src="image/add-to-cart-32px.png" alt="">
@@ -291,7 +323,8 @@
                     <p class="product-name">XIAO MI 14T PRO</p>
                 </div>
 
-                <div class="product" data-brand="xiaomi" data-os="android" data-storage="128gb" data-ram="8gb" data-price="12000000">
+                <div class="product" data-brand="xiaomi" data-os="android" data-storage="128gb" data-ram="8gb"
+                    data-price="12000000">
                     <img src="image/products/Xiaomi/Xiaomi_15_5G.png" alt="">
                     <button class="add-to-cart">
                         <img src="image/add-to-cart-32px.png" alt="">
@@ -300,7 +333,8 @@
                     <p class="product-name">XIAO MI 15 5G</p>
                 </div>
 
-                <div class="product" data-brand="xiaomi" data-os="android" data-storage="512gb" data-ram="16gb" data-price="9000000">
+                <div class="product" data-brand="xiaomi" data-os="android" data-storage="512gb" data-ram="16gb"
+                    data-price="9000000">
                     <img src="image/products/Xiaomi/Xiaomi_15Ultra_5G.png" alt="">
                     <button class="add-to-cart">
                         <img src="image/add-to-cart-32px.png" alt="">
@@ -309,7 +343,8 @@
                     <p class="product-name">XIAO MI 15 ULTRA 5G</p>
                 </div>
 
-                <div class="product" data-brand="xiaomi" data-os="android" data-storage="128gb" data-ram="8gb" data-price="15900000">
+                <div class="product" data-brand="xiaomi" data-os="android" data-storage="128gb" data-ram="8gb"
+                    data-price="15900000">
                     <img src="image/products/Xiaomi/Xiaomi_Redmi_Note_13Pro.png" alt="">
                     <button class="add-to-cart">
                         <img src="image/add-to-cart-32px.png" alt="">
