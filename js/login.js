@@ -12,7 +12,7 @@ function onLoginHandler() {
     }
 }
 
-//Kiểm tra username và password nhập vào có đúng
+//Kiểm tra username và password nhập vào có đúng không
 function isAccountCorrect() {
     let inputUsername = document.getElementById("username").value;
     let inputPassword = document.getElementById("password").value;

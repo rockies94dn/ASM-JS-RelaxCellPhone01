@@ -279,7 +279,7 @@ function sortProducts() {
 }
 
 
-updateProductCount();
+// updateProductCount();
 
 // Banner Slider functionality
 let currentSlideIndex = 0;
