@@ -271,3 +271,232 @@
          text-align: left;
      }
  }
+
+
+
+ /*--------------------------------------------------------------------------------------------------------------------------*/
+
+.product-detail-container {
+    display: flex;
+    gap: 32px;
+    background: #fff;
+    padding: 32px;
+    border-radius: 12px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+    margin-bottom: 32px;
+}
+.product-gallery {
+    flex: 1;
+    max-width: 500px;
+}
+.product-gallery .main-img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+}
+.product-gallery .thumbs {
+    display: flex;
+    gap: 8px;
+}
+.product-gallery .thumbs img {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 6px;
+    border: 1px solid #eee;
+    cursor: pointer;
+    transition: border 0.2s;
+}
+.product-gallery .thumbs img:hover {
+    border: 2px solid #ff6a00;
+}
+.product-info {
+    flex: 2;
+}
+.product-title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: #222;
+}
+.product-rating {
+    margin-bottom: 12px;
+    color: #ff9800;
+    font-size: 1.1rem;
+}
+.product-rating a {
+    color: #007bff;
+    text-decoration: none;
+    margin-left: 8px;
+}
+.product-price {
+    font-size: 1.7rem;
+    font-weight: bold;
+    color: #e53935;
+    margin-bottom: 12px;
+}
+.product-price .old-price {
+    font-size: 1.1rem;
+    color: #888;
+    text-decoration: line-through;
+    margin-left: 12px;
+}
+.product-price .discount {
+    background: #ff6a00;
+    color: #fff;
+    font-size: 1rem;
+    padding: 2px 8px;
+    border-radius: 4px;
+    margin-left: 12px;
+}
+.product-color, .product-storage {
+    margin-bottom: 12px;
+}
+.color-btn, .storage-btn {
+    background: #f5f5f5;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 6px 16px;
+    margin-right: 8px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background 0.2s, border 0.2s;
+}
+.color-btn:hover, .storage-btn:hover {
+    background: #ff6a00;
+    color: #fff;
+    border: 1px solid #ff6a00;
+}
+.product-promotion {
+    background: #fffbe6;
+    border: 1px solid #ffe58f;
+    border-radius: 6px;
+    padding: 12px;
+    margin-bottom: 16px;
+}
+.product-promotion h3 {
+    margin-top: 0;
+    color: #ff6a00;
+    font-size: 1.1rem;
+}
+.product-promotion ul {
+    margin: 0;
+    padding-left: 18px;
+}
+.buy-actions {
+    display: flex;
+    gap: 16px;
+    margin-bottom: 16px;
+}
+.buy-now, .add-cart {
+    background: #ff6a00;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    padding: 12px 32px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+.add-cart {
+    background: #007bff;
+}
+.buy-now:hover {
+    background: #e65100;
+}
+.add-cart:hover {
+    background: #0056b3;
+}
+.product-contact {
+    font-size: 1.1rem;
+    color: #222;
+    margin-bottom: 8px;
+}
+.product-specs {
+    background: #f5f5f5;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 24px;
+}
+.product-specs h2 {
+    margin-top: 0;
+    color: #ff6a00;
+    font-size: 1.2rem;
+}
+.product-specs table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 1rem;
+}
+.product-specs td {
+    padding: 8px 12px;
+    border-bottom: 1px solid #e0e0e0;
+}
+.product-specs tr:last-child td {
+    border-bottom: none;
+}
+.product-description {
+    background: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 1px 6px rgba(0,0,0,0.05);
+}
+.product-description h2 {
+    color: #ff6a00;
+    font-size: 1.2rem;
+    margin-top: 0;
+}
+
+
+
+
+/* Điều chỉnh ảnh không bị lệch và phù hợp với kích cỡ*/
+.product-gallery .main-img {
+    width: 100%;
+    max-width: 500px;
+    height: 500px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+    display: block;
+}
+.product-gallery .thumbs {
+    display: flex;
+    gap: 8px;
+}
+.product-gallery .thumbs img {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 6px;
+    border: 1px solid #eee;
+    cursor: pointer;
+    transition: border 0.2s;
+    display: block;
+}
+
+
+
+
+/*thanh cuộn ngang*/
+.product-gallery .thumbs {
+    display: flex;
+    gap: 8px;
+    overflow-x: auto;
+    padding-bottom: 6px;
+    max-width: 500px;
+}
+.product-gallery .thumbs img {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 6px;
+    border: 1px solid #eee;
+    cursor: pointer;
+    flex-shrink: 0;
+    transition: border 0.2s;
+    display: block;
+}
