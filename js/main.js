@@ -1,9 +1,19 @@
 let cartWindow = null; //tạo biến để dùng lưu tham chiếu trang giỏ hàng sau khi open nó
 
 document.addEventListener("DOMContentLoaded", function () {
+    loadLoginButton();
     updateCartCount();
     initializeBannerSlider();
 });
+
+//đổi icon của button login theo trạng thái đăng nhập
+function loadLoginButton() {
+    if (isLogin()) {
+        document.getElementById("login-icon").setAttribute("src", "image/login.png");
+    } else {
+        document.getElementById("login-icon").setAttribute("src", "image/notlogin.png");
+    }
+}
 
 //mở trang chi tiết sản phẩm
 function openDetails() {
@@ -22,7 +32,7 @@ document.addEventListener("DOMContentLoaded", function () {
             const productElement = this.closest(".product");
             const name = productElement.querySelector(".product-name").innerText;
             const img = productElement.querySelector("img").getAttribute("src");
-            const price = productElement.dataset.price;
+            const price = Number(productElement.dataset.price);
 
             //Lưu các chỉ số lấy được dưới dạng mảng
             const product = { name, img, price };

@@ -6,6 +6,7 @@ function onLoginHandler() {
         alert("Đăng nhập thành công.");
         //gọi hàm trong main.js để lưu lại currentLoginUsername
         window.opener.handleLoginSuccess(savedUsername);
+        window.opener.loadLoginButton();
         window.close();
     } else {
         alert("Tên đăng nhập hoặc mật khẩu không đúng.");

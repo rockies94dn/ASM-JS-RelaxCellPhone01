@@ -13,7 +13,7 @@ function displayCart() {
         row.innerHTML = `
             <td class="product-img"><img src="${product.img}" alt="" width="60"></td>
             <td class="product-name">${product.name}</td>
-            <td class="product-price">${product.price}</td>
+            <td class="product-price">${product.price.toLocaleString("vi-VN")}</td>
             <td class="product-remove"><button class="btn-remove">Xoá</button></td>
         `;
 

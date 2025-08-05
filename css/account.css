@@ -1,7 +1,7 @@
 body {
     text-align: center;
     justify-items: center;
-    line-height: 200%;
+    line-height: 150%;
     background-color: rgba(239, 223, 191, 0.359);
     color: orangered;
     font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
@@ -15,6 +15,7 @@ body {
     color: black;
     padding: 20px;
     font-size: medium;
+    background-color: #c19c7b75;
 }
 
 span {
@@ -27,7 +28,6 @@ button {
     border: none;
     border-radius: 6px;
     padding: 12px 32px;
-    font-size: 1.0rem;
     font-weight: bold;
     cursor: pointer;
     transition: background 0.2s;

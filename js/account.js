@@ -10,5 +10,6 @@ document.getElementById("phone").innerText = localStorage.getItem("savedPhone");
 function onLogoutButton() {
     window.opener.handleLogout();
     alert("Đã đăng xuất.");
+    window.opener.loadLoginButton();
     window.close();
 }
