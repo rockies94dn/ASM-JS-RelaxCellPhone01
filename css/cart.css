@@ -35,3 +35,16 @@ span {
     font-weight: bolder;
     color: green
 }
+
+button {
+    background: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    padding: 12px 32px;
+    font-size: 1.0rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.2s;
+    margin: 10px;
+}
