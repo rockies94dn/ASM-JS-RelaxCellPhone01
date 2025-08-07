@@ -41,9 +41,9 @@ function displayCart() {
             //Sửa số lượng hiển thị trên nút giỏ hàng
             window.opener.updateCartCount();
 
-            // Cập nhật tổng tiền
-            totalAmount -= numericPrice;
-            totalAmountElement.textContent = totalAmount.toLocaleString() + " VND";
+            // Tính lại tổng tiền từ mảng cart mới
+            let newTotal = cart.reduce((sum, item) => sum + parseFloat(item.price), 0);
+            totalAmountElement.textContent = newTotal.toLocaleString() + " VND";
 
             // Xoá dòng khỏi bảng
             row.remove();
