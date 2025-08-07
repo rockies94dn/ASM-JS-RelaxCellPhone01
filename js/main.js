@@ -45,7 +45,7 @@ document.addEventListener("DOMContentLoaded", function () {
             updateCartCount();
 
             //Reload cửa sổ cửa hàng
-            if (cartWindow && cartWindow.closed) {
+            if (cartWindow && !cartWindow.closed) {
                 cartWindow.location.reload();
             }
 
@@ -289,7 +289,7 @@ function sortProducts() {
 }
 
 
-// updateProductCount();
+updateProductCount();
 
 // Banner Slider functionality
 let currentSlideIndex = 0;

@@ -7,15 +7,16 @@ function displayCart() {
     let totalAmount = 0;
 
     // Hiển thị sản phẩm từ localStorage
-    cart.forEach(product => {
+    cart.forEach((product, index) => {
         const row = document.createElement("tr");
+        row.setAttribute("data-index", index); // Thêm index vào row
 
         row.innerHTML = `
-            <td class="product-img"><img src="${product.img}" alt="" width="60"></td>
-            <td class="product-name">${product.name}</td>
-            <td class="product-price">${product.price.toLocaleString("vi-VN")}</td>
-            <td class="product-remove"><button class="btn-remove">Xoá</button></td>
-        `;
+        <td class="product-img"><img src="${product.img}" alt="" width="60"></td>
+        <td class="product-name">${product.name}</td>
+        <td class="product-price">${product.price.toLocaleString("vi-VN")}</td>
+        <td class="product-remove"><button class="btn-remove">Xoá</button></td>
+    `;
 
         table.appendChild(row);
 
@@ -28,14 +29,10 @@ function displayCart() {
     table.addEventListener('click', function (e) {
         if (e.target.classList.contains("btn-remove")) {
             const row = e.target.closest("tr");
-            const name = row.querySelector(".product-name").innerText;
-            const priceText = row.querySelector(".product-price").innerText;
+            const index = parseInt(row.getAttribute("data-index")); // Lấy index
 
-            // Chuyển đổi giá thành số (nếu có định dạng dấu , hoặc VND)
-            const numericPrice = parseFloat(priceText.replace(/[^\d.-]/g, ""));
-
-            // Cập nhật mảng cart
-            cart = cart.filter(item => item.name !== name);
+            // Xoá đúng sản phẩm theo index
+            cart.splice(index, 1);
             localStorage.setItem("cart", JSON.stringify(cart));
 
             //Sửa số lượng hiển thị trên nút giỏ hàng
